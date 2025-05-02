@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetBloom Website Design</title>
+    <link rel="stylesheet" href="style.css">
+
+   <!-- 🌸 Poppins Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  
+
+
+  <!-- 🌸 INTERNAL CSS -->
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
+
+    nav {
+      background-color: #000;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+    }
+
+    p.description {
+      font-size: 20px;
+      color: #ddd;
+      max-width: 1000px;
+      margin: 0 auto 40px;
+      line-height: 1.8;
+    }
+
+    .website-btn {
+      display: inline-block;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      padding: 14px 32px;
+      background-color: #AF1740;
+      color: white;
+      font-size: 16px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 4px 16px rgba(255, 99, 132, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .website-btn:hover {
+      transform: scale(1.05);
+      background-color: #CC2B52;
+    }
+
+    .palette-section h2 {
+      font-size: 40px;
+      font-weight: 700;
+      margin: 70px 0 40px;
+      color: #DE7C7D;
+    }
+
+    .palette {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .color-box {
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .color-box div {
+      width: 100px;
+      height: 100px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(255,255,255,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .color-box:hover div {
+      transform: scale(1.15);
+      box-shadow: 0 8px 25px rgba(255,255,255,0.3);
+    }
+
+    .color-code {
+      margin-top: 10px;
+      color: #ccc;
+      font-weight: 500;
+    }
+
+    .font-section {
+      margin-top: 70px;
+    }
+
+    .font-section h2 {
+      font-size: 28px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .font-name {
+      font-size: 24px;
+      font-weight: 700;
+      color: #DE7C7D;
+      transition: transform 0.3s ease, letter-spacing 0.3s ease;
+      display: inline-block;
+    }
+
+    .font-name:hover {
+      transform: scale(1.1);
+      letter-spacing: 1px;
+    }
+
+
+
+
+    /* Optional card hover effect */
+
+
+    .font-section {
+  margin-top: 100px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+}
+
+.font-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #DE7C7D;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.font-name {
+  font-size: 28px;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+}
+
+.font-name:hover {
+  transform: scale(1.08);
+  background-color: #CC2B52;
+  border-color: white;
+  color: white;
+}
+
+
+    /* TYPOGRAPHY AND COLOUR PALATTEE */
+
+.typography-colours {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 30px;
+  background: #000000;
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.typography-box {
+  background: #AF1740;
+  color: #ffffff;
+  padding: 40px;
+  border-radius: 24px;
+  text-align: center;
+  max-width: 400px;
+  flex: 1;
+}
+
+.typography-box h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.font-info .font-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.font-info .font-style {
+  font-size: 16px;
+  margin-top: 8px;
+  font-weight: 400;
+}
+
+.color-palette {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  max-width: 500px;
+  flex: 1;
+}
+
+.color {
+  position: relative;
+  padding-bottom: 100%;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.color span {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .typography-box {
+    padding: 30px 20px;
+  }
+
+  .typography-box h2 {
+    font-size: 22px;
+  }
+
+  .font-info .font-name {
+    font-size: 20px;
+  }
+
+  .color span {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .color-palette {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+</style>
+
+
+
+
+  <!-- Navbar -->
+  <nav>
+    <div style="color: white; font-size: 20px; font-weight: bold;">My Portfolio</div>
+    <ul style="list-style: none; display: flex; gap: 50px; margin: 0; padding: 0;">
+      <li><a href="index.html">← Back to Home</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section Start -->
+  <section>
+    <h1>WEBSITE DESIGN - PETBLOOM</h1>
+    
+    <p class="description">
+      PETBLOOM is a desktop-first website built with HTML and CSS, offering a clean and engaging platform for exploring premium pet products. Designed with user-friendly navigation and a visually appealing layout.
+
+    
+
+
+   <!-- Single Image Display -->
+<!-- Full Width Image Without Gaps -->
+<!-- Centered Image with Reduced Size -->
+<div style="margin: 0 auto; padding: 0; max-width: 90vw;">
+  <img 
+    src="images/mockup1.jpg" 
+    alt="PetBloom Website Landing Page" 
+    style="width: 80%; height: auto; display: block; margin: 0 auto; border: none;">
+</div>
+
+
+
+
+<!-- Problem & Solution Section - Bigger & Bolder -->
+<div style="margin-top: 80px; display: flex; justify-content: center;">
+  <div style="background-color: #111; border: 3px solid #AF1740; border-radius: 30px; padding: 60px; max-width: 1000px; width: 100%; box-shadow: 0 12px 35px rgba(255, 99, 132, 0.2); transition: transform 0.3s ease;">
+
+    <h2 style="color: #DE7C7D; font-size: 36px; margin-bottom: 40px; text-align: center; letter-spacing: 1px;">
+      💡 Design Challenges & Smart Solutions
+    </h2>
+
+    <div style="margin-bottom: 40px;">
+      <h3 style="color: #fff; font-size: 28px; margin-bottom: 15px;">🚧 Problem</h3>
+      <p style="color: #ddd; font-size: 20px; line-height: 1.8;">
+        Many pet product websites lack a clean and user-friendly interface, especially on desktop. Poor layout and cluttered design often make it hard for users to browse and shop with ease.</p>
+    </div>
+
+    <div>
+      <h3 style="color: #fff; font-size: 28px; margin-bottom: 15px;">✅ Solution</h3>
+      <p style="color: #ddd; font-size: 20px; line-height: 1.8;">
+        PETBLOOM was designed as a desktop-first website using HTML and CSS, focusing on clear navigation, attractive visuals, and a smooth browsing experience. The design is scalable, with plans to make it fully responsive for all devices in future updates.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Typography & Colours Section -->
+<section class="typography-colours">
+  <div class="typography-box">
+    <h2>Typography & Colours</h2>
+    <div class="font-info">
+      <h3 class="font-name">Poppins</h3>
+      <p class="font-style">Bold, Medium & Regular</p>
+    </div>
+  </div>
+
+  <div class="color-palette">
+    <div class="color" style="background-color: #b9d088;"><span>#b9d088</span></div>
+    <div class="color" style="background-color: #e4f7bc;"><span>#e4f7bc</span></div>
+    <div class="color" style="background-color: #d06791;"><span>#d06791</span></div>
+    <div class="color" style="background-color: #4d2117;"><span>#4d2117</span></div>
+    <div class="color" style="background-color: #f4ece4;"><span>#f4ece4</span></div>
+    <div class="color" style="background-color: #663399;"><span>#663399</span></div>
+  </div>
+</section>
+
+<!-- PETBLOOM WEBSITE LINK -->
+
+<a href="https://palakprajapati-gt.github.io/PetBloom/" target="_blank" class="website-btn">
+  🌸 VIEW LIVE WEBSITE
+</a>
+
+</bbody>
+</html>
