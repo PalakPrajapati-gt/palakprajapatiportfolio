@@ -567,3 +567,93 @@ nav .fas{
    letter-spacing: 2px;
    text-transform: uppercase; /* Optional: Makes it look bold and clean */
  }
+
+
+
+
+
+
+
+ @media (max-width: 600px) {
+   .container {
+      padding: 20px 5%;
+   }
+
+   nav ul {
+      display: flex;
+      flex-direction: row; /* Keep nav in row */
+      text-align: right;
+      justify-content: center;
+      flex-wrap: wrap;     /* Wrap if too tight */
+      gap: 32px;           /* Small gap between items */
+      font-size: 0.7rem;
+   }
+
+   nav ul li {
+      margin: 0; /* Remove vertical spacing */
+   }
+
+   .header-text {
+      text-align: center;
+      margin-top: 60%;
+      padding: 0 10px;
+   }
+
+   .h1-first
+   {
+      font-size: 2rem;
+   }
+
+
+   .h1-second,
+   .header-text p {
+      font-size: 1.5rem;
+   }
+
+   .tab-titles {
+      flex-direction: row;
+      align-items: flex-start;
+   }
+
+   .tab-links {
+      margin-bottom: 10px;
+   }
+
+   .skills-list {
+      grid-template-rows: repeat(2, 1fr);
+   }
+
+   .work {
+      flex-direction: column;
+      align-items: center;
+      margin: 40px 0;
+   }
+
+   .box {
+      width: 90%;
+      margin-bottom: 20px;
+   }
+
+   .contact-left p {
+      font-size: 14px;
+   }
+
+   .social-icons a {
+      font-size: 24px;
+   }
+
+   .btn.btn2 {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+   }
+
+   .about-col-1 {
+      display: none !important;
+   }
+
+   .about-col-2 {
+      flex-basis: 100%;
+      text-align: center;
+   }
+}
