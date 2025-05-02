@@ -188,60 +188,59 @@
 
 
 <style>
+  @media (max-width: 600px) {
+    /* Hide the slider and navigation buttons */
+    .slider,
+    .nav-button {
+      display: none !important;
+    }
 
-@media (max-width: 600px) {
-  /* Hide slider */
-  .slider,
-  .nav-button {
-    display: none !important;
+    /* Show gallery grid with three images per row */
+    .mockup-gallery {
+      display: flex !important;
+      flex-wrap: wrap;
+      gap: 20px; /* Increased gap between images */
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .mockup-gallery img {
+      width: 45%; /* Increased width for bigger images */
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px; /* Adds space between images */
+    }
+
+    /* Problem and Solution Section Text */
+    .work-section .problem-solution h3 {
+      font-size: 18px; /* Smaller text size for problem/solution titles */
+    }
+
+    .work-section .problem-solution p,
+    .work-section .problem-solution ul {
+      font-size: 14px; /* Smaller font for text */
+      line-height: 1.4; /* Adjust line height for readability */
+    }
+
+    /* General paragraph text */
+    .work-section p {
+      font-size: 16px; /* Smaller and readable font size */
+      line-height: 1.6;
+    }
+
+    /* Center the headings and paragraphs */
+    .work-section h2, .work-section h3, .work-section p {
+      text-align: center;
+    }
+
+    /* Adjust layout padding for smaller screens */
+    .work-section {
+      padding: 20px; /* Reduced padding for smaller screens */
+    }
   }
-
-  /* Show gallery grid with three images per row */
-  .mockup-gallery {
-    display: flex !important;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-
-  .mockup-gallery img {
-    width: 30%; /* Each image takes up 30% of the row width */
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px; /* Adds space between images */
-  }
-
-  /* Center text */
-  .work-section h2, .work-section h3, .work-section p {
-    text-align: center;
-  }
-
-  /* Center the problem and solution section text */
-  .work-section .problem-solution {
-    padding: 20px;
-    text-align: center;
-  }
-
-  /* Problem and Solution Text Styles */
-  .work-section .problem-solution h3 {
-    font-size: 22px; /* Larger font size for small text */
-  }
-  .work-section .problem-solution p,
-  .work-section .problem-solution ul {
-    font-size: 16px; /* Small text */
-  }
-  
-  /* For the general paragraph text */
-  .work-section p {
-    font-size: 18px; /* Small and readable font size */
-    line-height: 1.6;
-  }
-}
-
-
-
 </style>
+
+
 </section>
 
 </body>
