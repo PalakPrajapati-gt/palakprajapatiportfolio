@@ -45,7 +45,7 @@ body{
       background-image: url(images/palki-removebg\ copy.png) ;
       background-position: bottom;
       background-attachment:scroll;
-      background-size: clamp(350px, 6vw + 200px, 800px);
+      background-size: clamp(450px, 6vw + 200px, 800px);
       background-repeat: no-repeat;
    }
 
