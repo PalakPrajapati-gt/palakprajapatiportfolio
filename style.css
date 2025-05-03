@@ -45,7 +45,7 @@ body{
       background-image: url(images/palki-removebg\ copy.png) ;
       background-position: bottom;
       background-attachment:scroll;
-      background-size: clamp(300px, 2vw + 200px, 800px);
+      background-size: clamp(350px, 6vw + 200px, 800px);
       background-repeat: no-repeat;
    }
 
@@ -194,20 +194,26 @@ nav ul li a:hover::after{
 }
 
 @media (min-width: 800px) {
-   .about-col-1{
+   .about-col-1 {
       display: flex;
       flex-basis: 35%;
+      justify-content: center; /* centers the content horizontally */
+      align-items: center;     /* centers the content vertically */
    }
-   .about-col-1 img{
+
+   .about-col-1 img {
       width: 100%;
       height: clamp(90%, 1.5vw + 20%, 110%);
       border-radius: 15px;
    }
 
-   .about-col-2{
+   .about-col-2 {
       flex-basis: 60%;
    }
+
+   
 }
+
 
 .sub-title{
    font-size: clamp(3rem, 9vw, 5rem);
