@@ -7,7 +7,10 @@
     <title>Personal Portfolio Website - Easy Tutorials</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
 
@@ -106,50 +109,61 @@
 
 
 <!-- ----------portfolio------------ -->
+<!-- Portfolio Section -->
 <div id="portfolio">
-    <div class="container">
-      <h1 class="sub-title">My Work</h1>
-      <div class="work">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work">
 
-        <a href="socialmedia.html" class="box-link">
-          <div class="box">  
-            <i class="icon fab fa-facebook"></i>
-            Social Media
-            <div class="description">Created engaging social media graphics for brands like Fitspire.</div>
-          </div>
-        </a>
+      <a href="socialmedia.html" class="box-link">
+        <div class="box">  
+          <i class="fas fa-bullhorn icon"></i>
+          <h3>Social Media</h3>
+          <div class="description">Created engaging social media graphics for brands like Fitspire.</div>
+        </div>
+      </a>
 
-        <a href="u.html"  class="box-link">
-          <div class="box">
-            <i class="icon fas fa-paint-brush"></i>
-            UI/UX Design
-            <div class="description">Designed the UI/UX interface for PetBloom.</div>
-          </div>
-        </a>
+      <a href="u.html" class="box-link">
+        <div class="box">
+          <i class="fas fa-mobile-alt icon"></i>
+          <h3>UI/UX Design</h3>
+          <div class="description">Designed the UI/UX interface for PetBloom.</div>
+        </div>
+      </a>
 
-        <a href="web.html" class="box-link">
-          <div class="box">
-            <i class="icon fas fa-laptop-code"></i>
-            Website Design
-            <div class="description">Built a functional website for PetBloom.</div>
-          </div>
-        </a>
+      <a href="web.html" class="box-link">
+        <div class="box">
+          <i class="fas fa-code icon"></i>
+          <h3>Website Design</h3>
+          <div class="description">Built a functional website for PetBloom.</div>
+        </div>
+      </a>
 
-        <a href="logo.html"  class="box-link">
-          <div class="box">
-            <i class="icon fas fa-vector-square"></i>
-            Logo
-            <div class="description">Designed logos for Cuscino and PetBloom.</div>
-          </div>
-        </a>
+      <a href="logo.html" class="box-link">
+        <div class="box">
+          <i class="fas fa-pen-nib icon"></i>
+          <h3>Logo</h3>
+          <div class="description">Designed logos for Cuscino and PetBloom.</div>
+        </div>
+      </a>
 
-      </div>
     </div>
+  </div>
 </div>
+
+
 <script>
     function redirect(url) {
         window.location.href = url;
     }
+
+     function openmenu() {
+    document.getElementById("sidemenu").classList.add("open");
+  }
+
+  function closemenu() {
+    document.getElementById("sidemenu").classList.remove("open");
+  }
 </script>
 
 
@@ -157,18 +171,13 @@
 
 <!-- ----------contact------------- -->
 <div id="contact">
-    <div class="container">
-        <div class="row">
+    <div class="container-contact">
+        <div >
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fas fa-paper-plane"></i>prajapatipalak003@gmail.com</p>
-                <p><i class="fas fa-phone-square-alt"></i> +91 9310146219</p>
-                <div class="social-icons">
-                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-twitter-square"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-linkedin"></i></a>
-                </div>
+                <p>prajapatipalak003@gmail.com</p>
+                <p> +91 9310146219</p>
+                
                 <a href="images/Palak Resume.docx (1).pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
@@ -180,8 +189,9 @@
                 </form>
                 <span id="msg"></span>
               </div>
-              </div>
-             </div>
+          </div>
+</div>
+</div>
   
 <!-- -----------js for message---------- -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
